@@ -50,3 +50,6 @@ dist/
 # Operating system files
 .DS_Store
 Thumbs.db
+
+backend/media/
+node_modules/
