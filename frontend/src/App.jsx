@@ -10,10 +10,11 @@ import PostForm from "./pages/PostForm";
 function App() {
   return (
     <Routes>
+      {/* Login/Register tự dựng khung riêng (AuthShell) */}
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
       <Route element={<Layout />}>
         <Route path="/" element={<PostList />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
         {/* /posts/new phải đứng trước /posts/:slug */}
         <Route
           path="/posts/new"
