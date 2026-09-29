@@ -39,6 +39,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'unfold',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -160,4 +161,15 @@ REST_FRAMEWORK = {
 SIMPLE_JWT = {
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=30),
     "REFRESH_TOKEN_LIFETIME": timedelta(days=7),
+}
+
+UNFOLD = {
+    "SITE_TITLE": "Blog Admin",
+    "SITE_HEADER": "Quản trị Blog",
+    "SITE_URL": "/",              # link "Xem trang web"
+    "COLORS": {
+        "primary": {
+            "500": "99 102 241",  # tím-indigo, đổi theo ý thích
+        },
+    },
 }
