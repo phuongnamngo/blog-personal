@@ -1,8 +1,21 @@
 # DevLog
 
-Blog cá nhân cho lập trình viên: đọc bài viết công khai, đăng ký tài khoản, và viết hoặc sửa bài của chính mình.
+Blog cá nhân cho lập trình viên: đọc bài công khai, đăng ký tài khoản, và viết hoặc sửa bài của chính mình.
 
-Giao diện React và Tailwind CSS nói chuyện với API Django qua JWT. PostgreSQL chạy bằng Docker Compose.
+React và Tailwind CSS gọi API Django qua JWT. PostgreSQL chạy bằng Docker Compose.
+
+[![Django](https://img.shields.io/badge/Django-5.2-092E20?logo=django&logoColor=white)](https://www.djangoproject.com/)
+[![React](https://img.shields.io/badge/React-19-087EA4?logo=react&logoColor=white)](https://react.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38BDF8?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+
+## Giao diện
+
+Thiết kế DevLog trên [Stitch](https://stitch.withgoogle.com/projects/2015282136040427535): trang chủ, bài viết, và trình soạn.
+
+| Trang chủ | Bài viết | Viết bài |
+| --- | --- | --- |
+| ![Trang chủ DevLog](docs/screenshots/home.jpg) | ![Chi tiết bài viết](docs/screenshots/post.jpg) | ![Viết bài mới](docs/screenshots/editor.jpg) |
 
 ## Công nghệ
 
