@@ -27,6 +27,12 @@ api.interceptors.response.use(
     }
     original._retry = true;
 
+    if (!refresh) {
+      // không có refresh token: bỏ luôn Authorization và thử lại như khách ẩn danh
+      delete original.headers.Authorization;
+      return api(original);
+    }
+
     try {
       refreshing ??= axios
         .post("/api/auth/refresh/", { refresh })
@@ -41,7 +47,8 @@ api.interceptors.response.use(
       localStorage.removeItem("access");
       localStorage.removeItem("refresh");
       window.dispatchEvent(new Event("auth:logout"));
-      return Promise.reject(e);
+      delete original.headers.Authorization;
+      return api(original); 
     }
   },
 );
