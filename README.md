@@ -2,7 +2,7 @@
 
 Blog cá nhân cho lập trình viên: đọc bài viết công khai, đăng ký tài khoản, và viết hoặc sửa bài của chính mình.
 
-Giao diện React nói chuyện với API Django qua JWT. PostgreSQL chạy bằng Docker Compose.
+Giao diện React và Tailwind CSS nói chuyện với API Django qua JWT. PostgreSQL chạy bằng Docker Compose.
 
 ## Công nghệ
 
